@@ -1,110 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Swe Online Shopping</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <header>
-    <h1>✨ Swe Online Shopping ✨</h1>
-    <p>Bracelets | Earrings | Phone Charms | Keychains | Neckpieces</p>
-    <button id="theme-toggle">🌙 Dark Mode</button>
+    <h1>Swe Handmade Jewel</h1>
+    <p>Handmade with love 💖 | Affordable 🤗 | Customizable for you ❣️</p>
+    <p>Bracelets | Earrings | Phone Charms | Keychains | Neckpieces | Bangles</p>
   </header>
 
-  <nav>
+  <nav class="topnav">
+    <a href="#featured">Featured</a>
     <a href="#bracelets">Bracelets</a>
     <a href="#earrings">Earrings</a>
     <a href="#charms">Phone Charms</a>
     <a href="#keychains">Keychains</a>
     <a href="#neckpieces">Neckpieces</a>
+    <a href="#bangles">Bangles</a>
   </nav>
+
+  <!-- Filter/Search Bar -->
+    <div class="filter-bar-container">
+    <div class="filter-bar">
+      <input type="text" id="search-bar" placeholder="🔍 Search products..."/>
+      <select id="sort-options" aria-label="Sort products">
+        <option value="default">Sort</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Featured Products -->
+  <div class="container" id="featured">
+    <h2>Featured Products</h2>
+    <div class="products" id="featured-products"></div>
+  </div>
 
   <!-- Bracelets -->
   <div class="container" id="bracelets">
     <h2>Bracelets</h2>
     <div class="products">
       <div class="product">
-        <img src="images/bracelet1.jpg" alt="Bracelet 1">
-        <h3>Golden Charm</h3>
-        <p>$25</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Golden%20Charm%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet11.jpg" alt="Bracelet 1">
+        <h3>Matte Finish Black & White Combo Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Matte%20Finish%20Black%20&%20White%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
         <img src="images/bracelet2.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <h3>Trendy Korean Style Purple Bead Bracelet</h3>
+        <p>₹79</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Trendy%20Korean%20Style%20Purple%20Bead%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet4.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet4.jpg" alt="Bracelet 3">
+        <h3>Cute Panda Bracelet with Letter</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Cute%20Panda%20Bracelet%20with%20Letters" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet5.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet5.jpg" alt="Bracelet 4">
+        <h3>Asthetic Silver Heart Lavender Beads Bracelet</h3>
+        <p>₹45</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Asthetic%20Silver%20Heart%20Lavender%20Beads%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet6.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet6.jpg" alt="Bracelet 4">
+        <h3>Ying Yang Black&White Combo Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Ying%20Yang%20Black&White%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet7.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet8.jpg" alt="Bracelet 4">
+        <h3>Panda Black&White Combo Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Panda%20Black&White%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet8.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet9.jpg" alt="Bracelet 4">
+        <h3>Sea Blue Butterfly Beads Bracelet</h3>
+        <p>₹69</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Sea%20Blue%20Buttterfly%20Beads%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet9.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet12.jpg" alt="Bracelet 4">
+        <h3>Magnetic heart Black&White Combo Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Magnetic%20Heart%20Black&White%20%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet10.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet3.jpg" alt="Bracelet 4">
+        <h3>Rose Gold Flower Hanging Bracelet</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rose%20Gold%20Flower%20%20Hanging%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/bracelet11.jpg" alt="Bracelet 2">
-        <h3>Silver Elegance</h3>
-        <p>$30</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Silver%20Elegance%20Bracelet" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/bracelet15.jpg" alt="Bracelet 4">
+        <h3>Crystal Flower Hanging Bracelet</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Crystal%20Flower%20Hanging%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet16.jpg" alt="Bracelet 4">
+        <h3>Half Moon Red Wine Bracelet</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Half%20Moon%20Red%20Wine%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet14.jpg" alt="Bracelet 4">
+        <h3>Baby Pink Elegant Bracelet</h3>
+        <p>₹89</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Baby%20Pink%20Elegant%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet18.jpg" alt="Bracelet 4">
+        <h3>Daisy Flower Matte White&Transparent Combo Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Daisy%20Flower%20Matte%20White%20&%20Transparent%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet19.jpg" alt="Bracelet 4">
+        <h3>Swan Light Blue Bracelet</h3>
+        <p>₹89</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Swan%20Light%20Blue%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet19.jpg" alt="Bracelet 4">
+        <h3>Black Crackle Bracelet</h3>
+        <p>₹29</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Black%20Crackle%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet21.jpg" alt="Bracelet 4">
+        <h3>Transparent Bracelet</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Transparent%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet22.jpg" alt="Bracelet 4">
+        <h3>Sea Blue with Heart Hanging Bracelet</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Sea%20Blue%20with%20Heart%20Hanging%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet23.jpg" alt="Bracelet 4">
+        <h3>Sea Blue Square Beads Bracelet</h3>
+        <p>₹189</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Sea%20Blue%20Square%20Beads%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet24.jpg" alt="Bracelet 4">
+        <h3>Pure White Pearl Bracelet</h3>
+        <p>₹59</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Pure%20White%20Pearl%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet25.jpg" alt="Bracelet 4">
+        <h3>Lavender Leaf Theme Bracelet</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Lavender%20Leaf%20Theme%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet26.jpg" alt="Bracelet 4">
+        <h3>Magnetic Hand Holding Combo Bracelet</h3>
+        <p>₹109</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Magnetic%20Hand%20Holding%20Combo%200Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet27.jpg" alt="Bracelet 4">
+        <h3>Ghost Pendant Combo Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Ghost%20Pendant%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet28.jpg" alt="Bracelet 4">
+        <h3>Stylish Violet Crackle Bracelet</h3>
+        <p>₹50</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Sea%20Blue%20with%20Stylish%20Violet%20Crackle%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet31.jpg" alt="Bracelet 4">
+        <h3>Elegant Flower Bracelet</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Elegant%20Flower%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet32.jpg" alt="Bracelet 4">
+        <h3>Korean Style Bow Bracelet</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Korean%20Style%20Bow%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet33.jpg" alt="Bracelet 4">
+        <h3>Black Matte Bracelet</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Black%20Matte%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet34.jpg" alt="Bracelet 4">
+        <h3>Evil Eye Bracelet</h3>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Evil%20eye%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet35.jpg" alt="Bracelet 4">
+        <h3>Asthetic Pearl Combo Bracelet</h3>
+        <p>₹189</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Asthetic%20Pearl%20Combo%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet36.jpg" alt="Bracelet 4">
+        <h3>Stylish Pearl Bracelet</h3>
+        <p>₹69</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Stylish%20Pearl%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet37.jpg" alt="Bracelet 4">
+        <h3>White Daisy Floral Bracelet</h3>
+        <p>Single Piece</p>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20White%20Daisy%20Floral%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet38.jpg" alt="Bracelet 4">
+        <h3>Daisy Theme Bracelet</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Daisy%20Theme%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet39.jpg" alt="Bracelet 4">
+        <h3>Sea Blue Daisy Bracelet</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Sea%20Blue%20Daisy%20Bracelet" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bracelet40.jpg" alt="Bracelet 4">
+        <h3>Daisy Theme with Letter Bracelet</h3>
+        <p>Single Piece</p>
+        <p>₹209</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Daisy%20Theme%20with%20Letter%20Bracelet" target="_blank">Order via WhatsApp</a>
       </div>
     </div>
   </div>
@@ -114,28 +254,46 @@
     <h2>Earrings</h2>
     <div class="products">
       <div class="product">
-        <img src="images/earring1.jpg" alt="Earring 1">
-        <h3>Pearl Drop</h3>
-        <p>$15</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Pearl%20Drop%20Earrings" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/earrings10.jpg" alt="Earring 1">
+        <h3>Stylish Rhythm Earrings</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Stylish%20Rhythm%20Earrings" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/earring2.jpg" alt="Earring 2">
-        <h3>Crystal Shine</h3>
-        <p>$18</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Crystal%20Shine%20Earrings" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/earrings11.jpg" alt="Earring 2">
+        <h3>Elegant Tulip Earrings</h3>
+        <p>₹79</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Elegant%20Tulip%20Earrings" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/earrings6.jpg" alt="Earring 2">
+        <h3>Asthetic Daisy Earrings</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Asthetic%20Daisy%20Earrings" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/earrings7.jpg" alt="Earring 2">
+        <h3>Gold Plated Pearl Hanging Earrings</h3>
+        <p>₹129</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Gold%20Plated%20Pearl%20Hanging%20Earrings" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/earrings 5.jpg" alt="Earring 2">
+        <h3>Stylish Crystal Earrings</h3>
+        <p>₹129</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Stylish%20Crystal%20Earrings" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/earring4.jpg" alt="Earring 2">
+        <h3>Twinkle Spiral Earrings</h3>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Twinkle%20Spiral%20Earrings" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
         <img src="images/earring3.jpg" alt="Earring 2">
-        <h3>Crystal Shine</h3>
-        <p>$18</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Crystal%20Shine%20Earrings" target="_blank">
-          Order via WhatsApp
-        </a>
+        <h3>Stylish Floral Earrings</h3>
+        <p>₹129</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Stylish%20Floral%20Earrings" target="_blank">Order via WhatsApp</a>
       </div>
     </div>
   </div>
@@ -145,52 +303,48 @@
     <h2>Phone Charms</h2>
     <div class="products">
       <div class="product">
-        <img src="images/charm1.jpg" alt="Phone Charm 1">
-        <h3>Rainbow Charm</h3>
-        <p>$10</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rainbow%20Phone%20Charm" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/charm3.jpg" alt="Phone Charm 2">
+        <h3>Butterfly Crystal Charm</h3>
+        <p>Single Piece</p>
+        <p>₹99</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Butterfly%20Crystal%20Charm" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/charm2.jpg" alt="Phone Charm 1">
-        <h3>Rainbow Charm</h3>
-        <p>$10</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rainbow%20Phone%20Charm" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/charm4.jpg" alt="Phone Charm 2">
+        <h3>Crystal Floral & Heart Charm</h3>
+        <p>Single Piece</p>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Crystal%20Floral&Heart%20Charm" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/charm3.jpg" alt="Phone Charm 1">
-        <h3>Rainbow Charm</h3>
-        <p>$10</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rainbow%20Phone%20Charm" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/charm6.jpg" alt="Phone Charm 2">
+        <h3>Asthetic Lavender Twinkle Charm</h3>
+        <p>₹129</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Asthetic%20Lavender%20Twinkle%20Charm" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/charm4.jpg" alt="Phone Charm 1">
-        <h3>Rainbow Charm</h3>
-        <p>$10</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rainbow%20Phone%20Charm" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/phonecharms1.jpg" alt="Phone Charm 2">
+        <h3>Pookie Stylish Charm</h3>
+        <p>₹69</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Pookie%20Stylish%20Charm" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/charm5.jpg" alt="Phone Charm 1">
-        <h3>Rainbow Charm</h3>
-        <p>$10</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rainbow%20Phone%20Charm" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/phonecharms2.jpg" alt="Phone Charm 2">
+        <h3>Korean Style Trending Charm</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Korean%20Style%20Trending%20Charm" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/charm6.jpg" alt="Phone Charm 1">
-        <h3>Rainbow Charm</h3>
-        <p>$10</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Rainbow%20Phone%20Charm" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/phonecharms3.jpg" alt="Phone Charm 2">
+        <h3>Pearl Pookie Elegant Charm</h3>
+        <p>₹129</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Pearl%20Pookie%20Elegant%20Charm" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/phonecharms4.jpg" alt="Phone Charm 2">
+        <h3>Asthetic Charm</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Asthetic%20Charm" target="_blank">Order via WhatsApp</a>
       </div>
     </div>
   </div>
@@ -200,20 +354,48 @@
     <h2>Keychains</h2>
     <div class="products">
       <div class="product">
-        <img src="images/keychain1.jpg" alt="Keychain 1">
-        <h3>Heart Keychain</h3>
-        <p>$12</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Heart%20Keychain" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/keychain2.jpg" alt="Keychain 1">
+        <h3>Elegant Butterfly Keychain </h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Elegant%20Butterfly%20Keychain" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/keychain2.jpg" alt="Keychain 1">
-        <h3>Heart Keychain</h3>
-        <p>$12</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Heart%20Keychain" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/key1.jpg" alt="Keychain 1">
+        <h3>Star Pearl Keychain</h3>
+        <p>₹79</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Star%20Pearl%20Keychain" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/key2.jpg" alt="Keychain 1">
+        <h3>Crystal Heart Keychain</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Crystal%20Heart%20Keychain" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/key3.jpg" alt="Keychain 1">
+        <h3>Red Heart Keychain</h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Red%20Heart%20Keychain" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/key4.jpg" alt="Keychain 1">
+        <h3>Alphabet Keychain </h3>
+        <p>Single Piece</p>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Alphabet%20Keychain" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/key6.jpg" alt="Keychain 1">
+        <h3>Elegant Halfmoon Keychain </h3>
+        <p>₹149</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Elegant%20Halfmoon%20Keychain" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/key5.jpg" alt="Keychain 1">
+        <h3>Unique Bow Keychain</h3>
+        <p>Single Piece</p>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Unique%20Bow%20Keychain" target="_blank">Order via WhatsApp</a>
       </div>
     </div>
   </div>
@@ -223,36 +405,162 @@
     <h2>Neckpieces</h2>
     <div class="products">
       <div class="product">
-        <img src="images/neckpiece1.jpg" alt="Neckpiece 1">
-        <h3>Royal Necklace</h3>
-        <p>$40</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/neck1.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 1 </h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
       </div>
       <div class="product">
-        <img src="images/neckpiece2.jpg" alt="Neckpiece 1">
-        <h3>Royal Necklace</h3>
-        <p>$40</p>
-        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">
-          Order via WhatsApp
-        </a>
+        <img src="images/neck2.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 2</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck3.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 3</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck4.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 4</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck5.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 5</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck6.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 6</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck7.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 7</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck8.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 8</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck9.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 9</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck10.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 10</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck11.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 11</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/neck12.jpg" alt="Neckpiece 1">
+        <h3>Asthetic Necklace 12</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
       </div>
     </div>
   </div>
 
+  <!-- Bangles -->
+  <div class="container" id="bangles">
+    <h2>Bangles</h2>
+    <div class="products">
+      <div class="product">
+        <img src="images/bangles2.jpg" alt="Bangles 1">
+        <h3>Lavender Glow Bangles</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bangles1.jpg" alt="Bangles 1">
+        <h3>Sparkle Aura Bangles</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bangles3.jpg" alt="Bangles 1">
+        <h3>Emerald Shine Bangle</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/bangles2.jpg" alt="Bangles 1">
+        <h3>Pearl Gold Charm Bangles</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hair Accessories -->
+  <div class="container" id="hair-accessories">
+    <h2>Hair Accessories</h2>
+    <div class="products">
+      <div class="product">
+        <img src="images/band1.jpg" alt="Hair Clip">
+        <h3>Stylish Hair Bands </h3>
+        <p>Single Piece</p>
+        <p>₹49</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/band2.jpg" alt="Hair Clip">
+        <h3>Stylish HairBand</h3>
+        <p>₹89</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/band3.jpg" alt="Hair Clip">
+        <h3>Floral Hair Clip </h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/band4.jpg" alt="Hair Clip">
+        <h3>Asthetic Hair Clips</h3>
+        <p>₹199</p>
+        <a class="order-btn" href="https://wa.me/919789458556?text=Hi%20I%20would%20like%20to%20order%20Royal%20Neckpiece" target="_blank">Order via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+<div class="container" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">Got questions or custom orders? Send us a WhatsApp message 📱</p>
+
+  <form onsubmit="sendToWhatsApp(event)" class="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <textarea id="message" rows="5" placeholder="Your Query..." required></textarea>
+    <button type="submit">Send on WhatsApp</button>
+  </form>
+</div>
+
+
   <footer>
     <p>&copy; 2025 Swe Online Shopping. All rights reserved.</p>
-    <p>For direct orders:
-      <a class="whatsapp-link" href="https://wa.me/919789458556?text=Hi%20I%20want%20to%20place%20an%20order" target="_blank">
-        Chat on WhatsApp
-      </a>
-    </p>
+    <p>For direct orders: <a class="whatsapp-link" href="https://wa.me/919789458556?text=Hi%20I%20want%20to%20place%20an%20order" target="_blank">Chat on WhatsApp</a></p>
   </footer>
 
-  <!-- Back to Top -->
   <button id="backToTop">⬆</button>
-
   <script src="script.js"></script>
 </body>
 </html>
